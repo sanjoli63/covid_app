@@ -1,4 +1,28 @@
-
-
+# Used to get an access token given an autorization key
 POST {{baseUrl}}/token
 Authorization: Basic {{authorization}}
+
+###
+Get {{baseUrl}}/cases
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+Get {{baseUrl}}/casesSuspected
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+Get {{baseUrl}}/casesConfirmed
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+Get {{baseUrl}}/deaths
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+Get {{baseUrl}}/recovered
+Accept: application/json
+Authorization: Bearer {{accessToken}}

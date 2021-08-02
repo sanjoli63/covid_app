@@ -2,12 +2,12 @@
   "rest-client.environmentVariables": {
     "sandbox": {
       "baseUrl": "https://ncov2019-admin.firebaseapp.com",
-      "authorization": "c7e016807ee276512ac0714b071a9040f625157354be8353450b93890817fb90"
-      "accessToken": "921a186a28590da5b69ab6e0ee61b4850d85556f782aa2a0f35474767ea2490c",
-          },
+      "authorization": "c7e016807ee276512ac0714b071a9040f625157354be8353450b93890817fb90",
+      "accessToken": "4c88862bd0e85f114a8121016a96a98f02b3d53f76b8adbde7a3b006452a9e6e",
+    },
     "production": {}
   },
-  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cCompilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
   "C_Cpp_Runner.debuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
   "C_Cpp_Runner.warnings": [
@@ -22,6 +22,5 @@
   "C_Cpp_Runner.cppStandard": "",
   "C_Cpp_Runner.excludeSearch": [],
   "C_Cpp_Runner.enableWarnings": true,
-  "C_Cpp_Runner.warningsAsError": false,
-  "C_Cpp.errorSquiggles": "Disabled"
+  "C_Cpp_Runner.warningsAsError": false
 }
