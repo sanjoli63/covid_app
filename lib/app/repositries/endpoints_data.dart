@@ -1,15 +1,6 @@
-class EndpointsData {
-  final int cases;
-  final int casesSuspected;
-  final int casesConfirmed;
-  final int deaths;
-  final int recovered;
+import 'package:covid_app/app/services/api.dart';
 
-  EndpointsData(
-    this.cases,
-    this.casesSuspected,
-    this.casesConfirmed,
-    this.deaths,
-    this.recovered,
-  );
+class EndpointsData {
+  EndpointsData({required this.values});
+  final Map<Endpoint, int> values;
 }
