@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class EndpointCard extends StatelessWidget {
   final Endpoint endpoint;
-  final int? value;
+  final int value;
 
   const EndpointCard({Key? key, required this.endpoint, required this.value})
       : super(key: key);
@@ -33,12 +33,11 @@ class EndpointCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                _cardTitles[
-                    endpoint]!, //The argument type 'String?' can't be assigned to the parameter type 'String'.
+                _cardTitles[endpoint]!,
                 style: Theme.of(context).textTheme.headline5,
               ),
               Text(
-                value != null ? value.toString() : '',
+                value.toString(),
                 style: Theme.of(context).textTheme.headline5,
               ),
             ],
