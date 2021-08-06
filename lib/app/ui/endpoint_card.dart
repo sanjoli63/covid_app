@@ -8,7 +8,7 @@ class EndpointCard extends StatelessWidget {
   const EndpointCard({Key? key, required this.endpoint, required this.value})
       : super(key: key);
 
-  static Map<Endpoint, String> _cardsTitles = {
+  static Map<Endpoint, String> _cardTitles = {
     Endpoint.cases: 'cases',
     Endpoint.casesSuspected: 'casesSuspected',
     Endpoint.casesConfirmed: 'casesConfirmed',
@@ -33,7 +33,8 @@ class EndpointCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                _cardsTitles[endpoint],
+                _cardTitles[
+                    endpoint]!, //The argument type 'String?' can't be assigned to the parameter type 'String'.
                 style: Theme.of(context).textTheme.headline5,
               ),
               Text(
