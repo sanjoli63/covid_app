@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'app/services/api.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

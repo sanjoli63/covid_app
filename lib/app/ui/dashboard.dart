@@ -32,14 +32,17 @@ class _DashboardState extends State<Dashboard> {
       ),
       body: RefreshIndicator(
         onRefresh: _updateData,
-        child: ListView(
-          children: <Widget>[
-            for (var endpoint in Endpoint.values)
-              EndpointCard(
-                endpoint: endpoint,
-                value: _endpointsData!.values[endpoint]!,
-              ),
-          ],
+        child: Container(
+          height: 500,
+          child: ListView(
+            children: <Widget>[
+              for (var endpoint in Endpoint.values)
+                EndpointCard(
+                  endpoint: endpoint,
+                  value: _endpointsData!.values[endpoint]!,
+                ),
+            ],
+          ),
         ),
       ),
     );

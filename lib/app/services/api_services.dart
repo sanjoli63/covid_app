@@ -39,8 +39,8 @@ class APIService {
       if (data.isNotEmpty) {
         final Map<String, dynamic> endpointData = data[0];
         final String? responseJsonKey = _responseJsonKeys[endpoint];
-        final int result = endpointData[responseJsonKey];
-        return result;
+        final int? result = endpointData[responseJsonKey];
+        return result!;
       }
     }
     print(
